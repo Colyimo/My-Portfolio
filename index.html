@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themesdesign.in/harold/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 15:55:47 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>Collins Lyimo Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <meta content="Themesdesign" name="author" />
+
+    
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/tiny-slider.css.html" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
+
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
+
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            
+
+            <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto navbar-center">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#aboutme" class="nav-link ">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#service" class="nav-link ">Service</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#work" class="nav-link ">Work / Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testi" class="nav-link">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form class="row g-3 needs-validation">
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Email <span
+                                    class="text-primary">*</span></label>
+                            <input type="email" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Subject <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom05" class="form-label">Password <span
+                                    class="text-primary">*</span></label>
+                            <input type="password" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="validationTextarea" class="form-label">Textarea<span
+                                    class="text-primary">*</span></label>
+                            <textarea class="form-control" id="validationTextarea" required></textarea>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+
+    <!-- home section -->
+    <section class="home" id="home" style="background-image: url(images/bg-home.png);">
+        <!-- start container -->
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="home-slider" id="home-slider">
+                        <div class="item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content-item">
+                                        <p class="text-warning fw-semibold mb-0">Hello! I AM</p>
+                                        <div class="home-title mb-0 fw-bold h1">
+                                            <span class="typewrite " data-period="2000"
+                                                data-type='[ "Collins Bosco.","Community Health Specialist.","Graduate based in CHD." ]'>
+                                                <span class="wrap text-dark"></span>
+                                            </span>
+                                        </div>
+                                        <p class="mt-3 text-muted">I am passionate about designing intuitive and aesthetically pleasing solutions for complex community health and development challenges. 
+                                            My focus is on creating minimalist products that effectively address health disparities and promote well-being.
+                                             I am also dedicated to exploring innovative approaches to enhance community health outcomes.</p>
+
+                                        <div class="icon-item mt-4">
+                                            <div class="d-flex">
+                                                
+                                                <a href="https://goto.now/oyKit">
+                                                    <div class="social-icon instagram avatar-sm">
+                                                        <i class="mdi mdi-instagram"></i>
+                                                    </div>
+                                                </a>
+                                                
+                                                <a href="https://goto.now/wkBJS">
+                                                    <div class="social-icon linkedin avatar-sm">
+                                                        <i class="mdi mdi-linkedin"></i>
+                                                    </div>
+                                                </a>
+
+                                                <a href="https://goto.now/X6jWM">
+                                                    <div class="social-icon pinterest avatar-sm">
+                                                        <i class="mdi mdi-pinterest"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="home-link d-inline-block mt-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="btn-link ">
+                                                    <a href="#" class="text-dark h6">
+                                                    </a>
+                                                </div>
+                                                <div class="btn-link-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="my-image">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    </section>
+    <!-- end home section -->
+
+
+
+    <!-- about-me section -->
+    <section class="section about-me" id="aboutme">
+        <!-- container -->
+        <div class="container">
+            <div class="about-box">
+                <div class="row">
+
+                    <div class="col-lg-6 position-relative">
+                        <div class="image-round"></div>
+                        
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="about-item p-5">
+                            <h2 class="display-5 fw-semibold">About Me</h2>
+                            <p class="text-muted fs-14">I am dedicated to designing intuitive and aesthetically pleasing solutions for complex community health and development challenges.
+                                 My focus is on creating minimalist products that effectively address health disparities and promote well-being.
+                                  I am also committed to exploring innovative approaches to enhance community health outcomes.</p>
+
+                            <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Skills</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Experience</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Education</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Data Entry</h6>
+                                            <h6>80%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="65"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Data Analysis</h6>
+                                            <h6>95%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Case Report</h6>
+                                            <h6>80%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+
+                                    <div class="experience">
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Texas Cancer Center</h5>
+                                                    <p class="text-muted fs-15">2022-2024 (2 Year Experience)</p>
+                                                    <p class="text-muted fs-15">At the Texas Cancer Center, I designed intuitive solutions for complex community health challenges, creating minimalist products to address health disparities and promote well-being.
+                                                         I collaborated with multidisciplinary teams to develop effective, sustainable health interventions, leveraging technology and design principles to empower individuals and communities in managing their health.
+                                                          This experience deepened my passion for leveraging design and technology to improve healthcare delivery and outcomes, particularly in underserved communities.
+                                                           It reinforced my commitment to creating solutions that are culturally sensitive and tailored to the unique needs of each community.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">
+                                    <div class="experience">
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Diploma In Community Health And Development</h5>
+                                                    <p class="text-muted fs-15 mb-0">2021 - 2023 (3 year)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Bachelors Degree In Community Health And Development</h5>
+                                                    <p class="text-muted fs-15 mb-0">1999-2000 (2 year)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end about-me -->
+
+
+    <!-- start service -->
+    <section class="section service" id="service">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h6 class="mb-0 text-muted fs-15">WHAT I OFFER</h6>
+                        <h2>Services</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-purple text-center">
+                                <i class="mdi mdi-cached fs-24 text-purple"></i>
+                            </div>
+                            <h6 class="mt-4">Research & Analysis</h6>
+                            <p class="text-muted fs-15">We utilize a customized application specifically designed for testing and diagnosis to prevent the spread of diseases.
+                                 This tool enables us to identify potential health issues early, allowing for timely interventions that reduce the risk of disease transmission.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-danger text-center">
+                                <i class="mdi mdi-comment-plus-outline fs-24 text-danger"></i>
+                            </div>
+                            <h6 class="mt-4">Data Entry</h6>
+                            <p class="text-muted fs-15">We utilize a customized application specifically designed for testing and diagnosis to prevent the spread of diseases.
+                                 This tool enables us to identify potential health issues early, allowing for timely interventions that reduce the risk of disease transmission.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-warning text-center">
+                                <i class="mdi mdi-layers fs-24 text-warning"></i>
+                            </div>
+                            <h6 class="mt-4">Compliant Safety Strategist</h6>
+                            <p class="text-muted fs-15 ">By leveraging the comprehensive framework established by the Occupational Safety and Health Act (OSHA),
+                                 I am dedicated to ensuring that workplace environments not only meet but exceed rigorous safety standards.
+                                 Together, we can create safer workplaces focused on health and safety.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!-- end service -->
+
+
+
+    <!-- start counter -->
+    <section class="section counter" id="counter">
+        <section class="section counter" id="work">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <h6 class="mb-0 text-muted fs-15">Counter</h6>
+                        <h2>My Achievement</h2>
+                        <p class="para-width text-muted mb-0 fs-15"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/heart.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="123">0</h2><span
+                                class="h2 fw-bold"></span><span class="h2"> +</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/blueprint.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="10">13</h2>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Project Done</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/star.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="100">0</h2><span
+                                class="h2 fw-bold"></span><span class="h2"> +</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Clients Review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/idea.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="12">3</h2><span
+                                class="h2"> +</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Year Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end counter -->
+
+
+    <!-- start testimonial -->
+    <section class="section testimonial" id="testi">
+        <div class="shape-1">
+            <img src="images/testi/shape.png" alt="" class="img-fluid">
+        </div>
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h6 class="mb-0 text-muted fs-15 text-uppercase">Testimonial</h6>
+                        <h2>People talk about us</h2>
+                        <p class="para-width text-muted mb-0 fs-15">A Private Limited is the most popular type of
+                            partnership Malta. The limited liability is, in fact, the only type of company allowed by
+                            Companies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper-container py-5">
+                <div class="swiper-wrapper pt-3">
+                    <!-- start slider -->
+                    <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                           
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" The work done by community health organizations has improved not just health services, but also brought new opportunities for local development. It’s incredible to see such positive impacts across multiple generations. "
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Ryan Moshi</h5>
+                                <p class="mb-0 text-muted fs-14">Embedded analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+
+                    <!-- start slider -->
+                    <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                           
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" The health initiatives in our community have been life-changing. Through improved access to medical care and educational programs, I've seen firsthand how our community's overall well-being has significantly improved."
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Lilian Dawson</h5>
+                                <p class="mb-0 text-muted fs-14">Embedded analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+
+                    <!-- start slider -->
+                    <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                           
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" Community health programs have helped us address critical issues like sanitation and disease prevention. These efforts have not only saved lives but have also brought us closer together as a united, resilient community."
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Bosco Lyimo</h5>
+                                <p class="mb-0 text-muted fs-14">Embedded analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+
+                    <!-- start slider -->
+                    <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                            
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" Thanks to the development efforts in our neighborhood, we now have better healthcare services, safe spaces for exercise, and nutrition awareness programs that truly make a difference in people's lives."
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Dr Anita Tingira</h5>
+                                <p class="mb-0 text-muted fs-14">Embedded analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+
+                    <!-- start slider -->
+                    <div class="swiper-slide border-radius position-relative ">
+                        <div class="user-image">
+                            
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="f-16 text-muted fs-15">" I’ve witnessed how public health campaigns are shaping healthier lifestyles in our community. The ongoing outreach and support empower people to take charge of their health and create lasting change"
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="user-info text-center">
+                            <div class="user-info">
+                                <h5 class="text-black mb-0">Jackline Dawson</h5>
+                                <p class="mb-0 text-muted fs-14">Embedded analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider -->
+                </div>
+
+                <!-- navigation buttons -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="shape-2">
+            <img src="images/testi/shape-2.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="shape-3">
+            <img src="images/testi/shape-3.png" alt="" class="img-fluid">
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end testimonial -->
+
+
+
+
+    <!-- start contact -->
+    <section class="contact pt-5 pb-0" id="contact">
+        <!-- start container -->
+        <div class="container">
+
+            <div class="shape-1">
+                <img src="images/testi/shape.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="contact-item">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="contact-info">
+                            <div class="mb-4">
+                                <h3>Let's Connect</h3>
+                                <p class="text-muted mb-0">Looking for help? Fill the form and start a new adventure.
+                                </p>
+                            </div>
+
+                            <hr>
+
+                            <div class="info-content mt-4">
+                                <h6>Address :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-home-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15">P.O.BOX 12068 ARUSHA CBD. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-content mt-4 pt-2">
+                                <h6>Phone :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-phone-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15">+255715999861
+                                        </p>
+                                        <p class="mb-0 fs-15">+254703349951
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="info-content mt-4 pt-2">
+                                <h6>Email Me At :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-email-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15">collinslyimotz@gmail.com </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ">
+                        <div class="custom-form mt-4 ">
+                            <form method="post" name="myForm" onsubmit="return validateForm()">
+
+                                <h6 class="mb-0 text-muted">Let's talk</h6>
+                                <h3>Enter your project details</h3>
+                                <p class=" fs-15 text-muted">Content here, content here', making it look like
+                                    readable English. Many desktop publishing packages.</p>
+                                <p id="error-msg" style="opacity: 1;">
+                                    <!-- <div class="alert alert-warning">*Please enter a Name*</div> -->
+                                </p>
+
+
+                                <div id="simple-msg"></div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input name="name" id="name" type="text" class="form-control contact-form"
+                                                placeholder="Your name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input name="email" id="email" type="email"
+                                                class="form-control contact-form" placeholder="Your email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control contact-form" id="subject"
+                                                placeholder="Your Subject..">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <textarea name="comments" id="comments" rows="4"
+                                                class="form-control contact-form h-auto"
+                                                placeholder="Your message..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-lg-12 d-grid">
+                                        <input type="submit" id="submit" name="send"
+                                            class="submitBnt btn btn-rounded btn-primary" value="Send Message">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shape-2">
+                <img src="images/testi/shape-2.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="shape-3 ">
+                <img src="images/testi/shape-3.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end contact -->
+
+
+    <!-- start footer -->
+    <section class=" footer">
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="mt-5">
+                        <a class=" logo text-uppercase" href="index.html">
+                          
+
+                        <div class="icon-item mt-4">
+                            <div class="d-flex">
+                                <a href="https://goto.now/oyKit">
+                                    <div class="social-icon instagram avatar-xs">
+                                        <i class="mdi mdi-instagram "></i>
+                                    </div>
+                                </a>
+                                </a>
+                                <a href="https://goto.now/wkBJS">
+                                    <div class="social-icon linkedin avatar-xs">
+                                        <i class="mdi mdi-linkedin"></i>
+                                    </div>
+                                </a>
+                                <a href="https://goto.now/X6jWM">
+                                    <div class="social-icon pinterest avatar-xs">
+                                        <i class="mdi mdi-pinterest"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+
+
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slider Js -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <!-- conter -->
+    <script src="js/counter.init.js"></script>
+
+    <!-- App Js -->
+    <script src="js/app.js"></script>
+
+</body>
+
+
+<!-- Mirrored from themesdesign.in/harold/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 15:56:25 GMT -->
+</html>
